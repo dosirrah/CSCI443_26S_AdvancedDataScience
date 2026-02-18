@@ -2,8 +2,10 @@
 *.XCF filter=lfs diff=lfs merge=lfs -text
 *.webp filter=lfs diff=lfs merge=lfs -text
 *.WEBP filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.PNG filter=lfs diff=lfs merge=lfs -text
+# In order to cleanly pull images into Databricks using
+# the github Databricks app, they cannot use git-lfs.
+#*.png filter=lfs diff=lfs merge=lfs -text
+#*.PNG filter=lfs diff=lfs merge=lfs -text
 *.heic filter=lfs diff=lfs merge=lfs -text
 *.HEIC filter=lfs diff=lfs merge=lfs -text
 *.psdb filter=lfs diff=lfs merge=lfs -text
