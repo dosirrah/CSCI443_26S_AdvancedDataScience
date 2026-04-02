@@ -24,7 +24,8 @@
 *.DOCX filter=lfs diff=lfs merge=lfs -text
 *.doc filter=lfs diff=lfs merge=lfs -text
 *.DOC filter=lfs diff=lfs merge=lfs -text
-*.csv filter=lfs diff=lfs merge=lfs -text
+# Because Databircks does not support git-lfs.
+#*.csv filter=lfs diff=lfs merge=lfs -text
 *.CSV filter=lfs diff=lfs merge=lfs -text
 *.gz filter=lfs diff=lfs merge=lfs -text
 *.GZ filter=lfs diff=lfs merge=lfs -text
